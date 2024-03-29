@@ -1,0 +1,12 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MySubMission" parent="Theme.Material3.DayNight">
+        <item name="colorPrimary">@color/magenta</item>
+        <item name="colorPrimaryDark">@color/magentaShadow</item>
+        <item name="colorAccent">@color/blue</item>
+        <item name="colorOnPrimary">@color/sand</item>
+        <item name="backgroundColor">@color/white</item>
+    </style>
+
+    <style name="Theme.MySubMission" parent="Base.Theme.MySubMission" />
+</resources>
