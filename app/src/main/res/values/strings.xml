@@ -3,7 +3,7 @@
     <string name="splash_desc">GithubGram</string>
     <string name="username">Username</string>
     <string name="input_username">Enter Somebody Name</string>
-    <string name="name_user">Nama User</string>
+    <string name="name_user">Username</string>
     <string name="fill_username">\@%1$s</string>
     <string name="fill_followers">%1$d Followers</string>
     <string name="fill_following">%1$d Following</string>

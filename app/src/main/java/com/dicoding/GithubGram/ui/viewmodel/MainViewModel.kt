@@ -21,7 +21,7 @@ class MainViewModel : ViewModel() {
 
     companion object {
         private const val TAG = "MainViewModel"
-        private const val LOGIN = "test"
+        private const val LOGIN = "samuelezra"
     }
 
     init {
