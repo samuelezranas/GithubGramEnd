@@ -11,7 +11,7 @@
         android:id="@+id/splashImage"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/githuhgram_logo"
+        android:src="@drawable/githubgramLogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -111,6 +111,30 @@ class DetailViewModel(application: Application) : ViewModel() {
         })
     }
 
+    fun getReposGithub(username: String) {
+        _isLoading.value = true
+        val client = ApiConfig.getApiService().getFollowing(username)
+        client.enqueue(object : Callback<List<ItemsItem>> {
+            override fun onResponse(
+                call: Call<List<ItemsItem>>,
+                response: Response<List<ItemsItem>>
+            ) {
+                _isLoading.value = false
+                if (response.isSuccessful) {
+                    _userFollowing.value = response.body()
+                } else {
+                    Log.e(TAG, "onFailure: ${response.message()}")
+                }
+            }
+
+            override fun onFailure(call: Call<List<ItemsItem>>, t: Throwable) {
+                _isLoading.value = false
+                Log.e(TAG, "onFailure: ${t.message}")
+            }
+
+        })
+    }
+
     fun getListFav(): LiveData<List<FavoriteUser>> = mRepository.getAllFavorite()
 
     fun setIsFavorite(isFavorite: Boolean){

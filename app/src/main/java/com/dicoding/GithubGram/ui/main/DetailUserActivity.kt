@@ -65,6 +65,7 @@ class DetailUserActivity : AppCompatActivity() {
             detailViewModel.getDetail(username)
             detailViewModel.getFollowerGithub(username)
             detailViewModel.getFollowingGithub(username)
+            detailViewModel.getReposGithub(username)
         }
 
         detailViewModel.user.observe(this) {
@@ -77,6 +78,8 @@ class DetailUserActivity : AppCompatActivity() {
                 detailBinding.tvUsernameDetail.text = it.login
                 detailBinding.tvFollowersDetail.text = "${it.followers} Followers"
                 detailBinding.tvFollowingDetail.text = "${it.following} Following"
+                detailBinding.tvRepositories.text = "${it.repository} Repositories"
+
             }
         }
 
@@ -135,6 +138,7 @@ class DetailUserActivity : AppCompatActivity() {
         private val TAB_TITLES = intArrayOf(
             R.string.tab_followers,
             R.string.tab_following
+
         )
     }
 }

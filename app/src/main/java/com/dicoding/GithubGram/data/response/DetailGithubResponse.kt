@@ -1,5 +1,6 @@
 package com.dicoding.GithubGram.data.response
 
+import com.dicoding.GithubGram.data.database.Repository
 import com.google.gson.annotations.SerializedName
 
 data class DetailGithubResponse(
@@ -24,6 +25,9 @@ data class DetailGithubResponse(
 
 	@field:SerializedName("following")
 	val following: Int? = null,
+
+	@field:SerializedName("repo")
+	val repository: Int? = null,
 
 	@field:SerializedName("name")
 	val name: String? = null,
