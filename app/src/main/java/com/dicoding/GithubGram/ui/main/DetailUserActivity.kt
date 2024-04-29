@@ -78,7 +78,7 @@ class DetailUserActivity : AppCompatActivity() {
                 detailBinding.tvUsernameDetail.text = it.login
                 detailBinding.tvFollowersDetail.text = "${it.followers} Followers"
                 detailBinding.tvFollowingDetail.text = "${it.following} Following"
-                detailBinding.tvRepositories.text = "${it.repository} Repositories"
+                detailBinding.tvRepositories.text = "${it.repositories} Repositories"
 
             }
         }
@@ -138,7 +138,6 @@ class DetailUserActivity : AppCompatActivity() {
         private val TAB_TITLES = intArrayOf(
             R.string.tab_followers,
             R.string.tab_following
-
         )
     }
 }
