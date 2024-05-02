@@ -5,9 +5,9 @@
     <string name="input_username">Enter Somebody Name</string>
     <string name="name_user">User Nickname</string>
     <string name="fill_username">\@username</string>
-    <string name="repositories">repos</string>
-    <string name="fill_followers">999 Followers</string>
-    <string name="fill_following">999 Following</string>
+    <string name="repositories">\??? Repositories</string>
+    <string name="fill_followers">\??? Followers</string>
+    <string name="fill_following">\??? Following</string>
     <string name="tab_followers">Followers</string>
     <string name="tab_following">Following</string>
     <!-- TODO: Remove or change this placeholder text -->

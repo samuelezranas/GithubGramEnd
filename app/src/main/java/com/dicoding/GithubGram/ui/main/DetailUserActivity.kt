@@ -65,7 +65,7 @@ class DetailUserActivity : AppCompatActivity() {
             detailViewModel.getDetail(username)
             detailViewModel.getFollowerGithub(username)
             detailViewModel.getFollowingGithub(username)
-            detailViewModel.getReposGithub(username)
+            detailViewModel.getReposCount(username)
         }
 
         detailViewModel.user.observe(this) {
@@ -75,7 +75,7 @@ class DetailUserActivity : AppCompatActivity() {
                     .centerCrop()
                     .into(detailBinding.imUserDetail)
                 detailBinding.tvNameDetail.text = it.name
-                detailBinding.tvUsernameDetail.text = it.login
+                detailBinding.tvUsernameDetail.text = "@${it.login}"
                 detailBinding.tvFollowersDetail.text = "${it.followers} Followers"
                 detailBinding.tvFollowingDetail.text = "${it.following} Following"
                 detailBinding.tvRepositories.text = "${it.repositories} Repositories"

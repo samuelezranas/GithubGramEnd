@@ -26,7 +26,7 @@ data class DetailGithubResponse(
 	@field:SerializedName("following")
 	val following: Int? = null,
 
-	@field:SerializedName("repositories")
+	@field:SerializedName("public_repos")
 	val repositories: Int? = null,
 
 	@field:SerializedName("name")

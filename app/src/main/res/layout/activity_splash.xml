@@ -12,6 +12,7 @@
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:src="@drawable/githubgram_logo"
+        android:contentDescription="@string/app_name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +24,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/splash_desc"
         android:textStyle="bold"
-        android:textSize="32dp"
+        android:textSize="32sp"
         app:layout_constraintEnd_toEndOf="@id/splashImage"
         app:layout_constraintStart_toStartOf="@id/splashImage"
         app:layout_constraintTop_toBottomOf="@id/splashImage" />

@@ -111,9 +111,9 @@ class DetailViewModel(application: Application) : ViewModel() {
         })
     }
 
-    fun getReposGithub(username: String) {
+    fun getReposCount(username: String) {
         _isLoading.value = true
-        val client = ApiConfig.getApiService().getFollowing(username)
+        val client = ApiConfig.getApiService().getReposCount(username)
         client.enqueue(object : Callback<List<ItemsItem>> {
             override fun onResponse(
                 call: Call<List<ItemsItem>>,
@@ -152,14 +152,14 @@ class DetailViewModel(application: Application) : ViewModel() {
     }
 
     fun updateFavUser(favUser: FavoriteUser, activity: DetailUserActivity){
-        val failMessage =  "Success Remove from Favorite"
-        val succesMessage =  "Success Add to Favorite"
+        val removeMessage =  "Remove from Favorite"
+        val addMessage =  "Add to Favorite"
         if( isFavorite.value != true ){
             addFavorite(favUser)
-            Toast.makeText(activity, succesMessage, Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, addMessage, Toast.LENGTH_SHORT).show()
         }else{
             removeFavorite(favUser)
-            Toast.makeText(activity, failMessage, Toast.LENGTH_SHORT).show()
+            Toast.makeText(activity, removeMessage, Toast.LENGTH_SHORT).show()
         }
     }
 

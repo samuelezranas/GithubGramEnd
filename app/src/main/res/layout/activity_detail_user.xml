@@ -14,6 +14,7 @@
         android:layout_marginTop="30dp"
         android:scaleType="centerCrop"
         app:civ_border_width="2dp"
+        app:civ_border_color="?attr/colorPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -26,6 +27,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/name_user"
         android:textStyle="bold"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/im_user_detail"/>
@@ -37,6 +39,7 @@
         android:layout_marginTop="4dp"
         android:text="@string/fill_username"
         android:textStyle="italic"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -82,14 +85,15 @@
         android:id="@+id/tabs"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:contentDescription="@string/tab_following"
-        android:backgroundTint="?attr/colorPrimary"
+        android:backgroundTint="?attr/colorOnPrimary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_followers_detail"
-        app:tabTextColor="@color/sand"
+        app:tabTextAppearance="@style/TabTextAppearance"
         tools:visibility="visible"/>
+
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/view_pager"

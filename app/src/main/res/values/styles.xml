@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<style name="TabTextAppearance" parent="TextAppearance.Design.Tab">
+    <item name="android:textColor">@color/grey</item> <!-- Warna teks untuk tab tidak terpilih -->
+    <item name="android:textColorSecondary">@color/white</item> <!-- Warna teks untuk tab terpilih -->
+</style>
+
+</resources>

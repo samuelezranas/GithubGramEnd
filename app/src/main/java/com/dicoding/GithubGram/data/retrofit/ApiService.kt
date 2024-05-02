@@ -26,7 +26,7 @@ interface ApiService {
     fun getFollowing(
         @Path("username") username: String?
     ): Call<List<ItemsItem>>
-    @GET("users/{username}/repositories")
+    @GET("users/{username}/public_repos")
     fun getReposCount(
         @Path("username") username: String?
     ): Call<List<ItemsItem>>

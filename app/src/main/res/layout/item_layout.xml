@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:civ_border_width="2dp"
-            app:civ_border_color="@color/blue"
+            app:civ_border_color="?attr/colorOnPrimary"
             card_view:layout_constraintStart_toStartOf="parent"
             card_view:layout_constraintTop_toTopOf="parent" />
 
@@ -41,7 +41,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="8dp"
             android:textSize="26sp"
-            android:text="@string/username"
+            android:text="@string/name_user"
             android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
             android:textColor="?attr/colorOnPrimary"
             android:shadowColor="@color/black"
